@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!--       menu         -->
+    <div class="container-fluid custom-container-xl sticky-top bg-menu">
+        <div class="row" id="top">
+            <div class="col-xl-2 col-lg-3 col-md-4 pt-3 pb-1 text-center bg-mobile">
+                <a href="#" class="mt-1"><img src="./img/RewStat.png" class="img-fluid " alt="REWEICOLI"
+                        width="200px"></a>
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-8">
+                <div class="row">
+                    <div class="col-12 bg-rew-blu rew-text barra-blu">
+                        <ul class="info-links text-white">
+                            <li>
+                                <a class="onblu" href="tel:800642853"><span
+                                        class="material-icons">phone_enabled</span></a>
+                            </li>
+                            <li>
+                                <a class="onblu" href="tel:800642853">800642853</a>
+                            </li>
+                        </ul>
+                        <ul class="info-links text-white">
+                            <li>
+                                <a class="onblu" href="https://wa.me/393273953700" target="_blank"><span
+                                        class="material-icons">phone_enabled</span></a>
+                            </li>
+                            <li>
+                                <a class="onblu" href="https://wa.me/393273953700" target="_blank">+39 327 3953700</a>
+                            </li>
+                        </ul>
+                        <ul class="info-links text-white">
+                            <li><a class="onblu" href="mailto:reweicoli@reweicoli.it"><span
+                                        class="material-icons">email</span></a></li><a class="onblu"
+                                href="mailto:reweicoli@reweicoli.it">
+                            </a>
+                            <li><a class="onblu" href="mailto:reweicoli@reweicoli.it"></a><a class="onblu text-16"
+                                    href="mailto:reweicoli@reweicoli.it">reweicoli@reweicoli.it</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 bg-rew-orange">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid justify-content-end">
+
+                            </div>
+                        </nav>
+                        <ul class="info-links text-white">
+                            <li class="nav-item">
+                                <a  href="#" style="text-decoration: none !important;" id="logout">
+                                <span class="material-symbols-outlined">logout</span> <span id="nomecentro"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--     Fine  Menu         -->
+
+    <!-- internet check -->
+    <section id="internet_check">
+        <div class="text-danger text-center">
+            <h2>OPS!!! Qualcosa è andato storto</h2>
+            <h3>questo programma richiede una connessione ad internet!</h3>
+            si prega di verificare la connessione alla rete internet e riprovare!
+        </div>
+        <center>
+            <buttom class="btn btn-danger text-center mt-5" id="check_connect">Riprova!</buttom>
+        </center>
+    </section>
+    <!-- fine internet check -->
+
+    <!-- nuova versione disponibile -->
+    <section id="newversion">
+        <div class="text-warning bg-dark p-4">
+            <center>
+                <h3>Nuova versione disponibile</h3>
+                <br>si prega di scaricare la nuova versione del programma!
+                <br><br>
+                <button class="btn btn-warning" id="upgrade"> Scarica la nuova versione!</button>
+            </center>
+        </div>
+    </section>
+    <!-- fine nuova versione disponibile -->
+
+    <!-- servizio non attivo -->
+    <section id="noaccess">
+        <div class="text-warning bg-dark p-4">
+            <center>
+                <h3>Servizio non attivo<h3>
+                        <br>Contatta lo staff reweicoli per maggiori informazioni
+            </center>
+        </div>
+    </section>
+    <!-- fine servizio non attivo -->
+
+    <!-- Login -->
+    <section id="login" class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="back-light">
+                        <div class="box">
+                            <h1>Login</h1>
+                            <p class="">Accedi con le stesse credenziali della tua Area Riservata del sito reweicoli.it
+                            </p>
+                            <input type="text" name="email" id="email" placeholder="E-Mail">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <a class="forgot" href="#" id="recupero_pwd">Password Dimenticata?</a>
+                            <input type="submit" name="" value="Accedi" id="btn_login">
+                            <div id="login_result"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Login -->
+
+
+    <section id="exe">
+        <h2 class="text-center m-3"> Caricamento automatico delle scadenze di revisione <br>e aggiornamento
+            statistiche e analisi <br>delle revisioni effettuate </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="text-align: center;">
+                        CARICA I DATI PER L’INVIO DELLE TUE LETTERE NELL’AREA RISERVATA REWEICOLI IN MODO IMMEDIATO E
+                        SICURO
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <label>Seleziona l'Anno di Scadenza Revisione:</label>
+                        <div class="form-outline">
+                            <input type="number" id="anno" name="anno" class="form-control" min="2010" max="2099"
+                                value="0" />
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-12 box2">
+                    <input type="submit" name="" id="Invia_Dati" value="Esegui Caricamento">
+                </div>
+                <div id="invia_dati_result"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="text-align: center;">
+                        AGGIORNA E ANLIZZA LE STATISTICHE DELLE REVISIONI SVOLTE
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                       <p>
+                        Questa nuova funzione, tramite l’area riservata del sito Reweicoli, ti permetterà di
+                        analizzare l’andamento del tuo centro, individuare tempestivamente quei clienti che non sono
+                        ancora venuti a fare la revisione per ricontattarli direttamente.
+                       </p>
+                    </center>
+                    
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col-12 box2">
+                    <input type="number" name="annoStat" id="annoStat" class="d-none" />
+                    <input type="submit" name="" id="Invia_Dati_Stat" value="Aggiorna dati Statistici">
+                </div>
+            </div>
+            <div id="invia_dati_result_stat"></div>
+            <div id="btn-aprisito">
+                <center>
+                <button id='aprisito' class='btn btn-primary'>Apri Sito!</button>
+                </center>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section>
+        <div class="footer">
+            <div id="internet_status"></div>
+        </div>
+    </section>
+
+
+</body>
+
+
+<script src="js/internet_status.js"></script>
+<script src="js/login.js"></script>
+<script src="js/invia_dati.js"></script>
+<script src="js/invia_dati_stat.js"></script>
+<script src="js/checkversion.js"></script>
+<script src="js/checkcaricamento.js"></script>
+<script src="js/checkanno.js"></script>
+</html>

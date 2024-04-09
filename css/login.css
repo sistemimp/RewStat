@@ -1,0 +1,152 @@
+/*@import '~mdb-ui-kit/css/mdb.min.css';*/
+
+.card {
+  
+    border: none !important;
+}
+
+.box {
+    text-align: center;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+
+    border-radius: 24px;
+
+}
+
+
+.box h1 {
+
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.box2 input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    background-color: white;
+    padding: 14px 40px;
+    outline: none;
+
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box2 input[type="submit"]:hover {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ff7b00;
+    background-color: white;
+    padding: 14px 40px;
+    outline: none;
+
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box3 input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0db1e7;
+    background-color: white;
+    padding: 14px 40px;
+    outline: none;
+
+    border-radius: 24px;
+    /*transition: 0.25s;*/
+    cursor: pointer
+}
+
+.box4 h1,
+input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background-color: rgba(39, 39, 39, 0.8);
+    padding: 14px 40px;
+    outline: none;
+
+    border-radius: 24px;
+    /*transition: 0.25s;*/
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+input[type="submit"]:disabled {
+    background: #666666;
+    color: white;
+}
+input[type="submit"]:disabled:hover{
+    background: #666666;
+    color: white;
+}
+
+
+.forgot {
+    text-decoration: underline;
+}
+
+.forgot:hover {
+    color: orange;
+}
+
+
+input[type="number"] {
+    text-align: center;
+}
+
+
+#nomecentro{
+    color: white;
+}
+.material-symbols-outlined{
+    color: white;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "RewStat",
+  "version": "1.0.2",
+  "description": "programma realizzato per acquisizione dati e fornitura servizi statistici e di approvvigionamento dati per service Reweicoli",
+  "main": "main.js",
+  "author": "Mediaprint S.r.l.",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^29.1.4",
+    "electron-builder": "^22.14.13",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
+    "app-data-folder": "^1.0.0",
+    "electron-forge": "^5.2.4",
+    "electron-log": "^5.1.2",
+    "temp-dir": "^2.0.0"
+  },
+  "build": {
+    "appId": "RewStat",
+    "mac": {
+      "category": "public.app-category.business"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "perMachine": true,
+      "license": "license.html"
+    },
+    "icon": "./img/icona.png"
+  }
+}
